@@ -1,9 +1,9 @@
 
  // This is used by the NestedList to allow editing of an item in the Store
  
-Ext.define('IoT.view.EditorPanel', {
+Ext.define('IoT.view.EditorPanelTHERM', {
     extend: 'Ext.form.Panel',
-    id: 'editorPanel',
+    id: 'editorPanelTHERM',
     config: {
         modal: true,
         hideOnMaskTap: false,
@@ -22,22 +22,12 @@ Ext.define('IoT.view.EditorPanel', {
         },
         {
                     xtype: 'spinnerfield',
-                    label: 'Value',
-                    minValue: 0,
-                    maxValue: 100,
-                    increment: 5,
+                    label: 'Thermostaat',
+                    minValue: 14,
+                    maxValue: 35,
+                    increment: 0.5,
                     cycle: false
         },
-        {
-                    xtype: 'togglefield',
-                    name: 'power',
-                    label: 'Power',
-                    value: 1
-                    //,labelWidth: '40%'
-        },
-
-
-
          {
             docked: 'top',
             xtype: 'toolbar',
@@ -50,7 +40,7 @@ Ext.define('IoT.view.EditorPanel', {
                     text: 'Cancel',
                     handler: function() {
                         Ext.getCmp('changeButton').setDisabled(false);
-                        Ext.getCmp('editorPanel').hide();
+                        Ext.getCmp('editorPanelTHERM').hide();
                     }
                 }, {
                     xtype: 'spacer'
@@ -59,7 +49,7 @@ Ext.define('IoT.view.EditorPanel', {
                     id: 'changeButton',
                     ui: 'action',
                     handler: function() {
-                        var formPanel = Ext.getCmp('editorPanel'),
+                        var formPanel = Ext.getCmp('editorPanelTHERM'),
                             formRecord = formPanel.getRecord(),
                             values = formPanel.getValues();
 

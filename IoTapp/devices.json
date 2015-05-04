@@ -1,27 +1,30 @@
 [{
-    "text": "Smart Devices",
-    "children": [{
         "text": "Thuis",
         "children": [{
             "text": "Woonhuis",
             "children": [{
                 "text": "CV",
-                "leaf": true
+                "leaf": true,
+                "temp": "20",
+                "device": "CV" 
             },{
                 "text": "TV",
                 "leaf": true
             },{
                 "text": "Radio",
-                "leaf": true
+                "leaf": true,
             },{
                 "text": "Beamer",
                 "leaf": true
             },{
                 "text": "Senseo",
-                "leaf": true
+                "leaf": true,
+                "temp": "20",
             },{
                 "text": "Hot-tub",
-                "leaf": true
+                "leaf": true,
+                "temp": "20",
+                "device": "CV"
             },{
                 "text": "Verlichting",
                 "leaf": true
@@ -33,10 +36,12 @@
             "text": "Tuinhuis",
             "children": [{
                 "text": "Straalkachel",
-                "leaf": true
+                "leaf": true,
+                "temp": "20"
             },{
                 "text": "Alarm",
-                "leaf": true
+                "leaf": true,
+                "temp": "20"
             }]
         }]
     },{
@@ -87,5 +92,4 @@
                 "leaf": true
             }]
         }]
-    }]
 }]
