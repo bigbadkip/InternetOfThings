@@ -1,0 +1,91 @@
+[{
+    "text": "Smart Devices",
+    "children": [{
+        "text": "Thuis",
+        "children": [{
+            "text": "Woonhuis",
+            "children": [{
+                "text": "CV",
+                "leaf": true
+            },{
+                "text": "TV",
+                "leaf": true
+            },{
+                "text": "Radio",
+                "leaf": true
+            },{
+                "text": "Beamer",
+                "leaf": true
+            },{
+                "text": "Senseo",
+                "leaf": true
+            },{
+                "text": "Hot-tub",
+                "leaf": true
+            },{
+                "text": "Verlichting",
+                "leaf": true
+            },{
+                "text": "Alarm",
+                "leaf": true
+            }]
+        },{
+            "text": "Tuinhuis",
+            "children": [{
+                "text": "Straalkachel",
+                "leaf": true
+            },{
+                "text": "Alarm",
+                "leaf": true
+            }]
+        }]
+    },{
+        "text": "Werk",
+        "children": [{
+            "text": "Desktop",
+            "leaf": true
+        },{
+            "text": "Laptop",
+            "leaf": true
+        },{
+            "text": "Vergaderzaal",
+            "leaf": true
+        },{
+            "text": "Slagboom",
+            "leaf": true
+        }]
+    },{
+        "text": "Zonnecellen",
+        "children": [{
+            "text": "Dorpsstraat 10a",
+            "children": [{
+                "text": "cel1",
+                "leaf": true
+            },{
+                "text": "cel2",
+                "leaf": true
+            },{
+                "text": "cel3",
+                "leaf": true
+            },{
+                "text": "cel4",
+                "leaf": true
+            },{
+                "text": "cel5",
+                "leaf": true
+            }]
+        },{
+            "text": "Kerkstraat 17",
+            "children": [{
+                "text": "cel1",
+                "leaf": true
+            },{
+                "text": "cel2",
+                "leaf": true
+            },{
+                "text": "cel3",
+                "leaf": true
+            }]
+        }]
+    }]
+}]
