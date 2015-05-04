@@ -24,16 +24,17 @@ Ext.define('IoT.view.LoginView', {
                     //     showAnimation: 'fadeIn',
                     //     style: 'color:#990000;margin:5px 0px;'
                     // },
-                    {
-                         xtype: 'image',
-                         src: Ext.Viewport.getOrientation() == 'portrait' ? 'lock.png' : 'lock.png',
-                         style: Ext.Viewport.getOrientation() == 'portrait' ? 'width:80px;height:80px;margin:auto' : 'width:40px;height:40px;margin:auto'
-                     },
+
                     {
                         xtype: 'fieldset',
-                        height: '175px',
+                        height: '50%',
                         title: 'Login',
                         items: [
+                                {
+                                 xtype: 'image',
+                                 src: Ext.Viewport.getOrientation() == 'portrait' ? 'lock.png' : 'lock.png',
+                                 style: Ext.Viewport.getOrientation() == 'portrait' ? 'width:80px;height:80px;margin:auto' : 'width:40px;height:40px;margin:auto'
+                             },
                             {
                                 xtype: 'textfield',
                                 placeHolder: 'Username',
@@ -47,16 +48,16 @@ Ext.define('IoT.view.LoginView', {
                                 itemId: 'passwordTextField',
                                 name: 'passwordTextField',
                                 required: true
-                            }
-                        ]
-                    },
-                                                {
+                            },
+                            {
                                 xtype: 'button',
                                 itemId: 'logInButton',
                                 ui: 'action',
                                 padding: '10px',
                                 text: 'Log In',
                             }
+                        ]
+                    },
                     
          ]
     }
