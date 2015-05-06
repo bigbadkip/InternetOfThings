@@ -17,45 +17,23 @@ Ext.define('IoT.view.Main', {
 
         items: [
         {
-                     docked: 'top',
-                     xtype: 'titlebar',
-                     title: 'The Internet Of Things'
+                docked: 'top',
+                xtype: 'titlebar',
+                title: 'The Internet Of Things'
         },
-            {
-                title: 'Locatie',
+        {
+                title: 'Login',
                 iconCls: 'home',
-
-                xtype:'list',
-                itemTpl:'{title}',                 
-                store: deviceStore,
-                listeners : {
-                         itemtap: function (list, index, item, record) {
-                         // Show next view based on current record
-
-                             var panel = Ext.create('Ext.Panel', {
-                                floating: true,
-                                centered: true,
-                                //modal: true,
-                                width: '80%',
-                                height: '80%',
-                                html: record.raw.content
-                            });
-
-                            panel.element.on('tap', function(){
-                                this.hide();
-                            });
-
-                            Ext.Viewport.add(panel);
-                               
-                        }
-                    }  
-            },
-            {
-                title: 'All Devices',
+                xtype: 'LoginView'
+                // items: {
+                //     html: "The Internet of Things (IoT) is the network of physical objects or 'things' embedded with electronics, software, sensors and connectivity to enable it to achieve greater value and service by exchanging data with the manufacturer, operator and/or other connected devices. Each thing is uniquely identifiable through its embedded computing system but is able to interoperate within the existing Internet infrastructure."
+                // }
+        },
+        {
+                title: 'Locaties',
                 iconCls: 'action',
-
-                    xtype:'DetailView'
-            }
+                xtype:'DetailView'
+        }
         ]
     }
 });
