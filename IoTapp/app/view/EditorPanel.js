@@ -22,7 +22,7 @@ Ext.define('IoT.view.EditorPanel', {
         },
         {
                     xtype: 'spinnerfield',
-                    label: 'Value',
+                    label: 'Dimmen',
                     minValue: 0,
                     maxValue: 100,
                     increment: 5,

@@ -1,2 +1,2 @@
 // @tag full-page
-// @require C:\Users\L\Desktop\USBWebserver v8.6\root\IoTapp\app.js
+// @require C:\Users\L\Documents\GitHub\InternetOfThings\IoTapp\app.js

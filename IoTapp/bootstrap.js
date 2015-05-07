@@ -32,8 +32,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "IoT": "app",
-  "Kitchensink": "app"
+  "IoT": "app"
 });
 
 Ext.ClassManager.addNameAlternateMappings({
@@ -672,8 +671,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "IoT.store.deviceStore": [],
   "IoT.view.DetailView": [],
   "IoT.view.EditorPanel": [],
-  "IoT.view.Main": [],
-  "Kitchensink.model.Cars": []
+  "IoT.view.EditorPanelTHERM": [],
+  "IoT.view.LoginView": [],
+  "IoT.view.Main": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1411,10 +1411,13 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.DetailView"
   ],
   "IoT.view.EditorPanel": [],
+  "IoT.view.EditorPanelTHERM": [],
+  "IoT.view.LoginView": [
+    "widget.LoginView"
+  ],
   "IoT.view.Main": [
     "widget.main"
-  ],
-  "Kitchensink.model.Cars": []
+  ]
 });
 
 
