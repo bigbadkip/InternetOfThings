@@ -1,12 +1,13 @@
 [{
-        "text": "Thuis",
+        "text": "Thuis - webJSON",
         "children": [{
             "text": "Woonhuis",
             "children": [{
                 "text": "CV",
                 "leaf": true,
                 "temp": "20",
-                "device": "CV" 
+                "device": "CV",
+                "icon": "URL.JPG" 
             },{
                 "text": "TV",
                 "leaf": true

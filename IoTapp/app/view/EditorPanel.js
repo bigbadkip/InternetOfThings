@@ -11,14 +11,10 @@ Ext.define('IoT.view.EditorPanel', {
         width: '90%',
         scrollable: null,
         items: [{
-            xtype: 'textfield',
-            name: 'text',
-            label: 'Name',
-            listeners: {
-                keyup: function(field) {
-                    Ext.getCmp('changeButton').setDisabled(field.getValue() ? false : true);
-                }
-            }
+                    xtype: 'textfield',
+                    name: 'text',
+                    label: 'Name',
+                    readOnly: true,
         },
         {
                     xtype: 'spinnerfield',
@@ -33,11 +29,7 @@ Ext.define('IoT.view.EditorPanel', {
                     name: 'power',
                     label: 'Power',
                     value: 1
-                    //,labelWidth: '40%'
         },
-
-
-
          {
             docked: 'top',
             xtype: 'toolbar',

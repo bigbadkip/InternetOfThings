@@ -3,6 +3,7 @@ Ext.define('IoT.model.Device', {
     config: {
         fields: [
             {name: 'text', type: 'string'},
+            {name: 'icon', type: 'string'},
             {name: 'temp', type: 'string'},
             {name: 'device', type: 'string'},
         ]
