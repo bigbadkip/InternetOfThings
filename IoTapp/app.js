@@ -22,7 +22,8 @@ Ext.application({
         'DetailView',
         'EditorPanel',
         'EditorPanelTHERM',
-        'LoginView'
+        'LoginView',
+        'Radio'
     ],
 
     models: [

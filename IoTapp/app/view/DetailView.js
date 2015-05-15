@@ -11,7 +11,7 @@ Ext.define('IoT.view.DetailView', {
     config: {
 
         listConfig:{
-        itemTpl:'<div id="{device}"> {icon} <!--<h2>{device}</h2>--!><p>{text}</p></div>'
+        itemTpl:'<div><img width="50" height="50" src="icons/{device}.png" border="1px solid blue"/>{text}</div>'
             },
 
         store: {
@@ -26,30 +26,21 @@ Ext.define('IoT.view.DetailView', {
         listeners: {
         leafitemtap  : function(me, list, index, item) {
 
+                var editorPanel;
                 var deviceType = list.getStore().getAt(index).data.device;
                
                 if(deviceType == "CV"){
-
-                    //fetch or create a/the editorPanel
-                    var editorPanel = Ext.getCmp('editorPanelTHERM') || new IoT.view.EditorPanelTHERM();       
-                    editorPanel.setRecord(list.getStore().getAt(index));
-                            
-                    if (!editorPanel.getParent()) {
-                        Ext.Viewport.add(editorPanel);
-                    }
-                    editorPanel.show();
+                    editorPanel = Ext.getCmp('editorPanelTHERM') || new IoT.view.EditorPanelTHERM();       
                 }
                 else{
-                    //fetch or create a/the editorPanel
-                    var editorPanel = Ext.getCmp('editorPanel') || new IoT.view.EditorPanel();       
-                    editorPanel.setRecord(list.getStore().getAt(index));
-                            
-                    if (!editorPanel.getParent()) {
+                    editorPanel = Ext.getCmp('editorPanel') || new IoT.view.EditorPanel();                                               
+                }
+
+editorPanel.setRecord(list.getStore().getAt(index));
+                if (!editorPanel.getParent()) {
                         Ext.Viewport.add(editorPanel);
                     }
-                    editorPanel.show();
-                }
-            
+            editorPanel.show();
             }
         }
     }

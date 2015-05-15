@@ -1,26 +1,31 @@
 [{
-        "text": "Thuis - webJSON",
+        "text": "Thuis",
+        "device": "NONE",
         "children": [{
             "text": "Woonhuis",
+            "device": "NONE",
             "children": [{
                 "text": "CV",
                 "leaf": true,
                 "temp": "20",
-                "device": "CV",
-                "icon": "URL.JPG" 
+                "device": "CV"
             },{
                 "text": "TV",
-                "leaf": true
+                "leaf": true,
+                "device": "TV"
             },{
                 "text": "Radio",
                 "leaf": true,
+                "device": "NONE"
             },{
                 "text": "Beamer",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             },{
                 "text": "Senseo",
                 "leaf": true,
                 "temp": "20",
+                "device": "NONE"
             },{
                 "text": "Hot-tub",
                 "leaf": true,
@@ -28,69 +33,88 @@
                 "device": "CV"
             },{
                 "text": "Verlichting",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             },{
                 "text": "Alarm",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             }]
         },{
             "text": "Tuinhuis",
+            "device": "NONE",
             "children": [{
                 "text": "Straalkachel",
                 "leaf": true,
-                "temp": "20"
+                "temp": "20",
+                "device": "NONE"
             },{
                 "text": "Alarm",
                 "leaf": true,
-                "temp": "20"
+                "temp": "20",
+                "device": "NONE"
             }]
         }]
     },{
         "text": "Werk",
+        "device": "NONE",
         "children": [{
             "text": "Desktop",
-            "leaf": true
+            "leaf": true,
+                "device": "NONE"
         },{
             "text": "Laptop",
-            "leaf": true
+            "leaf": true,
+            "device": "NONE"
         },{
             "text": "Vergaderzaal",
-            "leaf": true
+            "leaf": true,
+            "device": "NONE"
         },{
             "text": "Slagboom",
-            "leaf": true
+            "leaf": true,
+            "device": "NONE"
         }]
     },{
         "text": "Zonnecellen",
+        "device": "NONE",
         "children": [{
             "text": "Dorpsstraat 10a",
             "children": [{
                 "text": "cel1",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             },{
                 "text": "cel2",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             },{
                 "text": "cel3",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             },{
                 "text": "cel4",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             },{
                 "text": "cel5",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             }]
         },{
             "text": "Kerkstraat 17",
             "children": [{
                 "text": "cel1",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             },{
                 "text": "cel2",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             },{
                 "text": "cel3",
-                "leaf": true
+                "leaf": true,
+                "device": "NONE"
             }]
         }]
 }]

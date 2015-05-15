@@ -1,10 +1,10 @@
 
  // This is used by the NestedList to allow editing of an item in the Store
  
-Ext.define('IoT.view.EditorPanel', {
+Ext.define('IoT.view.ItemsDefault', {
     extend: 'Ext.form.Panel',
-    id: 'editorPanel',
-    requires: 'IoT.view.ItemsDefault',
+    alias : 'widget.ItemsDefault' ,
+    id: 'ItemsDefault',
     config: {
         modal: true,
         hideOnMaskTap: false,
@@ -12,20 +12,10 @@ Ext.define('IoT.view.EditorPanel', {
         width: '90%',
         scrollable: null,
         items: [{
-            xtype: 'textfield',
-            hidden: false,
-            name: 'device',
-            id: 'device'
-        },
-
-
-
-            //DEFAULT
-        {
                     xtype: 'textfield',
                     name: 'text',
                     label: 'Name',
-                    readOnly: true
+                    readOnly: true,                   
         },
         {
                     xtype: 'spinnerfield',
@@ -34,7 +24,7 @@ Ext.define('IoT.view.EditorPanel', {
                     minValue: 0,
                     maxValue: 100,
                     increment: 1,
-                    cycle: false                
+                    cycle: false
         },
         {
                     xtype: 'spinnerfield',
@@ -62,7 +52,7 @@ Ext.define('IoT.view.EditorPanel', {
                     text: 'Cancel',
                     handler: function() {
                         Ext.getCmp('changeButton').setDisabled(false);
-                        Ext.getCmp('editorPanel').hide();
+                        Ext.getCmp('ItemsDefault').hide();
                     }
                 }, {
                     xtype: 'spacer'
@@ -71,7 +61,7 @@ Ext.define('IoT.view.EditorPanel', {
                     id: 'changeButton',
                     ui: 'action',
                     handler: function() {
-                        var formPanel = Ext.getCmp('editorPanel'),
+                        var formPanel = Ext.getCmp('ItemsDefault'),
                             formRecord = formPanel.getRecord(),
                             values = formPanel.getValues();
 
@@ -87,5 +77,3 @@ Ext.define('IoT.view.EditorPanel', {
         }]
     }
 });
-
-
