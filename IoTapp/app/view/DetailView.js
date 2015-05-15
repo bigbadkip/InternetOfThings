@@ -34,6 +34,9 @@ Ext.define('IoT.view.DetailView', {
                 if(deviceType == "TV" || deviceType == "RADIO"){
                     editorPanel = Ext.getCmp('editorPanelTV') || new IoT.view.EditorPanelTV();                                               
                 }
+                if(deviceType == "BEAMER"){
+                    editorPanel = Ext.getCmp('editorPanelBEAMER') || new IoT.view.EditorPanelBEAMER();                                               
+                }
 
                 editorPanel.setRecord(list.getStore().getAt(index));
                 if (!editorPanel.getParent()) {

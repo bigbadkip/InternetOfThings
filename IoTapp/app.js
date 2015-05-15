@@ -23,6 +23,7 @@ Ext.application({
         'LoginView',
         'EditorPanelTV',
         'EditorPanelCV',
+        'EditorPanelBEAMER'
     ],
 
     models: [
