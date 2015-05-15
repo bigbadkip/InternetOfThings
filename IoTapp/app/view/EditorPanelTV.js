@@ -1,9 +1,9 @@
 
  // This is used by the NestedList to allow editing of an item in the Store
  
-Ext.define('IoT.view.EditorPanel', {
+Ext.define('IoT.view.EditorPanelTV', {
     extend: 'Ext.form.Panel',
-    id: 'editorPanel',
+    id: 'editorPanelTV',
     requires: 'IoT.view.ItemsDefault',
     config: {
         modal: true,
@@ -11,16 +11,7 @@ Ext.define('IoT.view.EditorPanel', {
         centered: true,
         width: '90%',
         scrollable: null,
-        items: [{
-            xtype: 'textfield',
-            hidden: false,
-            name: 'device',
-            id: 'device'
-        },
-
-
-
-            //DEFAULT
+        items: [
         {
                     xtype: 'textfield',
                     name: 'text',
@@ -62,7 +53,7 @@ Ext.define('IoT.view.EditorPanel', {
                     text: 'Cancel',
                     handler: function() {
                         Ext.getCmp('changeButton').setDisabled(false);
-                        Ext.getCmp('editorPanel').hide();
+                        Ext.getCmp('editorPanelTV').hide();
                     }
                 }, {
                     xtype: 'spacer'
@@ -71,7 +62,7 @@ Ext.define('IoT.view.EditorPanel', {
                     id: 'changeButton',
                     ui: 'action',
                     handler: function() {
-                        var formPanel = Ext.getCmp('editorPanel'),
+                        var formPanel = Ext.getCmp('editorPanelTV'),
                             formRecord = formPanel.getRecord(),
                             values = formPanel.getValues();
 

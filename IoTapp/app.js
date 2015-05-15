@@ -19,11 +19,10 @@ Ext.application({
 
     views: [
         'Main',
-        'DetailView',
-        'EditorPanel',
-        'EditorPanelTHERM',
+        'DetailView',  
         'LoginView',
-        'Radio'
+        'EditorPanelTV',
+        'EditorPanelCV',
     ],
 
     models: [

@@ -16,11 +16,11 @@
             },{
                 "text": "Radio",
                 "leaf": true,
-                "device": "NONE"
+                "device": "RADIO"
             },{
                 "text": "Beamer",
                 "leaf": true,
-                "device": "NONE"
+                "device": "BEAMER"
             },{
                 "text": "Senseo",
                 "leaf": true,

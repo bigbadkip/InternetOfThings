@@ -13,7 +13,6 @@ Ext.define('IoT.view.DetailView', {
         listConfig:{
         itemTpl:'<div><img width="50" height="50" src="icons/{device}.png" border="1px solid blue"/>{text}</div>'
             },
-
         store: {
             type: 'tree',
             id: 'NestedListStore',
@@ -30,17 +29,17 @@ Ext.define('IoT.view.DetailView', {
                 var deviceType = list.getStore().getAt(index).data.device;
                
                 if(deviceType == "CV"){
-                    editorPanel = Ext.getCmp('editorPanelTHERM') || new IoT.view.EditorPanelTHERM();       
+                    editorPanel = Ext.getCmp('editorPanelCV') || new IoT.view.EditorPanelCV();       
                 }
-                else{
-                    editorPanel = Ext.getCmp('editorPanel') || new IoT.view.EditorPanel();                                               
+                if(deviceType == "TV" || deviceType == "RADIO"){
+                    editorPanel = Ext.getCmp('editorPanelTV') || new IoT.view.EditorPanelTV();                                               
                 }
 
-editorPanel.setRecord(list.getStore().getAt(index));
+                editorPanel.setRecord(list.getStore().getAt(index));
                 if (!editorPanel.getParent()) {
                         Ext.Viewport.add(editorPanel);
                     }
-            editorPanel.show();
+                editorPanel.show();
             }
         }
     }
