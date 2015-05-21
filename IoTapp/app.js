@@ -21,6 +21,7 @@ Ext.application({
         'Main',
         'DetailView',  
         'LoginView',
+        'EditorPanel',
         'EditorPanelTV',
         'EditorPanelCV',
         'EditorPanelBEAMER'

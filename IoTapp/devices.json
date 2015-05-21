@@ -1,9 +1,9 @@
 [{
         "text": "Thuis",
-        "device": "NONE",
+        "device": "LOCATION",
         "children": [{
             "text": "Woonhuis",
-            "device": "NONE",
+            "device": "LOCATION",
             "children": [{
                 "text": "CV",
                 "leaf": true,
@@ -22,27 +22,22 @@
                 "leaf": true,
                 "device": "BEAMER"
             },{
-                "text": "Senseo",
-                "leaf": true,
-                "temp": "20",
-                "device": "NONE"
-            },{
                 "text": "Hot-tub",
                 "leaf": true,
                 "temp": "20",
                 "device": "CV"
             },{
-                "text": "Verlichting",
+                "text": "IP-Camera",
                 "leaf": true,
-                "device": "NONE"
+                "device": "CAMERA"
             },{
-                "text": "Alarm",
+                "text": "Ventilatie",
                 "leaf": true,
-                "device": "NONE"
+                "device": "VENTILATIE"
             }]
         },{
             "text": "Tuinhuis",
-            "device": "NONE",
+            "device": "LOCATION",
             "children": [{
                 "text": "Straalkachel",
                 "leaf": true,
@@ -57,7 +52,7 @@
         }]
     },{
         "text": "Werk",
-        "device": "NONE",
+        "device": "LOCATION",
         "children": [{
             "text": "Desktop",
             "leaf": true,
@@ -77,9 +72,10 @@
         }]
     },{
         "text": "Zonnecellen",
-        "device": "NONE",
+        "device": "LOCATION",
         "children": [{
             "text": "Dorpsstraat 10a",
+            "device": "LOCATION",
             "children": [{
                 "text": "cel1",
                 "leaf": true,
@@ -103,6 +99,7 @@
             }]
         },{
             "text": "Kerkstraat 17",
+            "device": "LOCATION",
             "children": [{
                 "text": "cel1",
                 "leaf": true,

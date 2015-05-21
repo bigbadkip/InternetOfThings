@@ -11,7 +11,7 @@ Ext.define('IoT.view.DetailView', {
     config: {
 
         listConfig:{
-        itemTpl:'<div><img width="50" height="50" src="icons/{device}.png" border="1px solid blue"/>{text}</div>'
+        itemTpl:'<div><img width="50" height="50" src="icons/{device}.png"/><strong>{text}<strong></div>'
             },
         store: {
             type: 'tree',
@@ -31,11 +31,14 @@ Ext.define('IoT.view.DetailView', {
                 if(deviceType == "CV"){
                     editorPanel = Ext.getCmp('editorPanelCV') || new IoT.view.EditorPanelCV();       
                 }
-                if(deviceType == "TV" || deviceType == "RADIO"){
+                else if(deviceType == "TV" || deviceType == "RADIO"){
                     editorPanel = Ext.getCmp('editorPanelTV') || new IoT.view.EditorPanelTV();                                               
                 }
-                if(deviceType == "BEAMER"){
+                else if(deviceType == "BEAMER"){
                     editorPanel = Ext.getCmp('editorPanelBEAMER') || new IoT.view.EditorPanelBEAMER();                                               
+                }
+                else {
+                    editorPanel = Ext.getCmp('editorPanel') || new IoT.view.EditorPanel();                                               
                 }
 
                 editorPanel.setRecord(list.getStore().getAt(index));
